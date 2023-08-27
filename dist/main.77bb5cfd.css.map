@@ -1,1 +1,1 @@
-{"version":3,"sources":["scss\\main.scss"],"names":[],"mappings":"AAGA;EACI,kBAJE;;AAKF;EACI,kBALD;EAMC;EACA","file":"main.77bb5cfd.css","sourceRoot":"..\\src","sourcesContent":["$red: rgb(229, 208, 208);\r\n$main: blue;\r\n\r\nbody {\r\n    background-color: $red;\r\n    main {\r\n        background-color: $main;\r\n        width: 100px;\r\n        height: 100px;\r\n        \r\n    }\r\n}"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"main.77bb5cfd.css","sourceRoot":"..\\src"}
