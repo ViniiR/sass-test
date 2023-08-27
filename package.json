@@ -1,0 +1,17 @@
+{
+  "name": "learning-sass",
+  "version": "1.0.0",
+  "description": "trying out sass and scss for the first time",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Vinii",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.66.1"
+  }
+}

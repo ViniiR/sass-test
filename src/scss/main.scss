@@ -1,0 +1,12 @@
+$red: rgb(229, 208, 208);
+$main: blue;
+
+body {
+    background-color: $red;
+    main {
+        background-color: $main;
+        width: 100px;
+        height: 100px;
+        
+    }
+}
