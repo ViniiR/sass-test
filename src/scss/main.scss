@@ -1,7 +1,83 @@
 @charset "UTF-8";
 
-header {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 160px;
+    section:first-child {
+        padding: 20px;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        a {
+            .pageLogo {
+                display: flex;
+                width: max-content;
+                height: max-content;
+                border: none;
+                gap: 5px;
+                div {
+                    display: flex;
+                    gap: 3px;
+                    span {
+                        display: inline-block;
+                        background-color: black;
+                    }
+                }
+                .pageLogoLeftDiv {
+                    flex-direction: row;
+                    span {
+                        width: 5px;
+                        height: 30px;
+                    }
+                }
+                .pageLogoRightDiv {
+                    flex-direction: column;
+                    span {
+                        width: 30px;
+                        height: 5px;
+                    }
+                }
+            }
+        }
+        section {
+            display: flex;
+            font-weight: 500;
+            gap: 5px;
+            height: max-content;
+            label {
+                font-size: 1.1em;
+            }
+            input {
+                appearance: none;
+                &::after {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m12 6.879-7.061 7.06 2.122 2.122L12 11.121l4.939 4.94 2.122-2.122z'%3E%3C/path%3E%3C/svg%3E");
+                    font-weight: 600;
+                    color: black;
+                }
+            }
+        }
+    }
+    section:last-child {
+        ul {
+            display: flex;
+            list-style-type: none;
+            li {
+                margin: 5px;
+                a {
+                    
+                }
+            }
+        }
+    }
 }
 
 body {
