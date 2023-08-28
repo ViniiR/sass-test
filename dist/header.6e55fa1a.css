@@ -1,0 +1,73 @@
+header {
+  height: 120px;
+}
+header section:first-child {
+  padding: 20px;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header section:first-child a .pageLogo {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  border: none;
+  gap: 5px;
+}
+header section:first-child a .pageLogo div {
+  display: flex;
+  gap: 3px;
+}
+header section:first-child a .pageLogo div span {
+  display: inline-block;
+  background-color: black;
+}
+header section:first-child a .pageLogo .pageLogoLeftDiv {
+  flex-direction: row;
+}
+header section:first-child a .pageLogo .pageLogoLeftDiv span {
+  width: 5px;
+  height: 30px;
+}
+header section:first-child a .pageLogo .pageLogoRightDiv {
+  flex-direction: column;
+}
+header section:first-child a .pageLogo .pageLogoRightDiv span {
+  width: 30px;
+  height: 5px;
+}
+header section:first-child section {
+  display: flex;
+  font-weight: 500;
+  gap: 5px;
+  height: max-content;
+}
+header section:first-child section label {
+  font-size: 1.1em;
+}
+header section:first-child section input {
+  appearance: none;
+}
+header section:first-child section input::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m12 6.879-7.061 7.06 2.122 2.122L12 11.121l4.939 4.94 2.122-2.122z'%3E%3C/path%3E%3C/svg%3E");
+  font-weight: 600;
+  color: black;
+}
+header section:last-child ul {
+  display: flex;
+  list-style-type: none;
+}
+header section:last-child ul li {
+  margin: 10px;
+}
+header section:last-child ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+header section:last-child ul li a.current-page-link {
+  color: orangered;
+}
+
+/*# sourceMappingURL=/header.6e55fa1a.css.map */
