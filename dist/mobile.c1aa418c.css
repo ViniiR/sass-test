@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+header section:first-child a .pageLogo {
+  display: flex;
+  gap: 5px;
+  border: none;
+}
+header section:first-child a .pageLogo div {
+  display: flex;
+  gap: 3px;
+}
+header section:first-child a .pageLogo div span {
+  background-color: black;
+}
+header section:first-child a .pageLogo div:first-child {
+  flex-direction: row;
+}
+header section:first-child a .pageLogo div:first-child span {
+  width: 5px;
+  height: 30px;
+}
+header section:first-child a .pageLogo div:last-child {
+  flex-direction: column;
+}
+header section:first-child a .pageLogo div:last-child span {
+  width: 30px;
+  height: 5px;
+}
+
+/*# sourceMappingURL=/mobile.c1aa418c.css.map */
