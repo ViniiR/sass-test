@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +11,12 @@
 }
 
 header {
+    height: 120px;
     section:first-child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
         a {
             .pageLogo {
                 display: flex;
@@ -39,8 +45,32 @@ header {
                 }
             }
         }
+        section {
+            display: flex;
+            label {
+                font-family: 'Cabin', sans-serif;
+                font-size: 1.1em;
+            }
+            input{
+                appearance: none;
+            }
+        }
     }
     section:last-child {
-
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 10px;
+            li {
+                margin-left: 20px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &.current-page-link {
+                        color: #ff764d;
+                    }
+                }
+            }
+        }
     }
 }
