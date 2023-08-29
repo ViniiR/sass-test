@@ -124,6 +124,30 @@ main {
                 }
             }
         }
+        &.secondArticle {
+            section {
+                &:first-child {
+                    display: flex;
+                    position: relative;
+                    justify-content: space-around;
+                    img {
+                        width: 30%;
+                        &:first-child {
+                            width: 40%;
+                        }
+                    }
+                    .orangeBackground {
+                        position: absolute;
+                        right: 0;
+                        top: -15%;
+                        z-index: -1;
+                        width: 60%;
+                        height: 130%;
+                        background-color: rgba(255, 226, 83, 0.608);
+                    }
+                }
+            }
+        }
     }
 }
 

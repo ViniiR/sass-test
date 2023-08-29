@@ -120,6 +120,26 @@ main article section:last-child p a {
 main article section:last-child p small {
   font-weight: lighter;
 }
+main article.secondArticle section:first-child {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+main article.secondArticle section:first-child img {
+  width: 30%;
+}
+main article.secondArticle section:first-child img:first-child {
+  width: 40%;
+}
+main article.secondArticle section:first-child .orangeBackground {
+  position: absolute;
+  right: 0;
+  top: -15%;
+  z-index: -1;
+  width: 60%;
+  height: 130%;
+  background-color: rgba(255, 226, 83, 0.608);
+}
 
 footer {
   display: none;
