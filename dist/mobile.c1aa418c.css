@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 header {
@@ -15,6 +14,9 @@ header section:first-child {
   align-items: center;
   gap: 20px;
   padding: 20px;
+}
+header section:first-child * {
+  cursor: pointer;
 }
 header section:first-child a .pageLogo {
   display: flex;
@@ -63,9 +65,64 @@ header section:last-child ul li {
 header section:last-child ul li a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 header section:last-child ul li a.current-page-link {
   color: #ff764d;
+}
+
+iframe {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article section {
+  width: 85%;
+}
+main article section:first-child {
+  position: relative;
+}
+main article section:first-child img {
+  width: 100%;
+}
+main article section:first-child .abletonTitle {
+  position: absolute;
+  z-index: 999;
+  color: #ff6c3f;
+  font-weight: bold;
+  font-size: 2.5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main article section:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px 0px;
+}
+main article section:last-child p {
+  font-weight: 500;
+}
+main article section:last-child p a {
+  text-decoration: none;
+  color: blue;
+}
+main article section:last-child p small {
+  font-weight: lighter;
+}
+
+footer {
+  display: none;
 }
 
 /*# sourceMappingURL=/mobile.c1aa418c.css.map */
