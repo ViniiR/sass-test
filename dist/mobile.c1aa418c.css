@@ -49,7 +49,7 @@ header section:first-child section {
 }
 header section:first-child section label {
   font-family: "Cabin", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 header section:first-child section input {
   appearance: none;
@@ -96,7 +96,7 @@ main article section:first-child .abletonTitle {
   z-index: 999;
   color: #ff6c3f;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -180,6 +180,30 @@ main article.fourthArticle section:first-child .blueBackground {
   transform: translateY(-7.25%);
   z-index: -1;
   background-color: rgba(0, 255, 187, 0.233);
+}
+main article.sixthArticle section:first-child {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: max-content;
+}
+main article.sixthArticle section:first-child div {
+  width: 30%;
+}
+main article.sixthArticle section:first-child div:first-child img {
+  transform: translateY(25%);
+}
+main article.sixthArticle section:first-child div.secondDiv img {
+  transform: translateX(15%);
+}
+main article.sixthArticle section:first-child div.purpleBackground {
+  z-index: -1;
+  width: 60%;
+  top: -20%;
+  left: 20%;
+  height: 140%;
+  position: absolute;
+  background-color: rgba(144, 9, 144, 0.386);
 }
 
 footer {
