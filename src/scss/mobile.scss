@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -77,10 +78,6 @@ header {
     }
 }
 
-iframe {
-    display: none;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -89,6 +86,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: max-content;
         section {
             width: 85%;
             &:first-child {
@@ -145,6 +143,56 @@ main {
                         height: 130%;
                         background-color: rgba(255, 226, 83, 0.608);
                     }
+                }
+            }
+        }
+        &.thirdArticle {
+            section:first-child {
+                .iframeSection {
+                    padding-bottom: 59%;
+                    width: 100%;
+                    position: relative;
+                    iframe {
+                        top: 5%;
+                        left: 5%;
+                        position: absolute;
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+                figcaption {
+                    margin-top: 10px;
+                }
+            }
+        }
+        &.fourthArticle {
+            section:first-child {
+                display: flex;
+                section:first-child {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 30px;
+                    width: 90%;
+                    img {
+                        width: 70%;
+                    }
+                }
+                section.rightImageSection {
+                    height: max-content;
+                    margin: auto 0px;
+                    & > img {
+                        width: 100%;
+                    }
+                }
+                .blueBackground {
+                    width: 70%;
+                    height: 120%;
+                    left: -10%;
+                    position: absolute;
+                    transform: translateY(-7.25%);
+                    z-index: -1;
+                    background-color: rgba(0, 255, 187, 0.233);
                 }
             }
         }

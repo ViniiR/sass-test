@@ -71,10 +71,6 @@ header section:last-child ul li a.current-page-link {
   color: #ff764d;
 }
 
-iframe {
-  display: none;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -84,6 +80,7 @@ main article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: max-content;
 }
 main article section {
   width: 85%;
@@ -139,6 +136,50 @@ main article.secondArticle section:first-child .orangeBackground {
   width: 60%;
   height: 130%;
   background-color: rgba(255, 226, 83, 0.608);
+}
+main article.thirdArticle section:first-child .iframeSection {
+  padding-bottom: 59%;
+  width: 100%;
+  position: relative;
+}
+main article.thirdArticle section:first-child .iframeSection iframe {
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
+main article.thirdArticle section:first-child figcaption {
+  margin-top: 10px;
+}
+main article.fourthArticle section:first-child {
+  display: flex;
+}
+main article.fourthArticle section:first-child section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  width: 90%;
+}
+main article.fourthArticle section:first-child section:first-child img {
+  width: 70%;
+}
+main article.fourthArticle section:first-child section.rightImageSection {
+  height: max-content;
+  margin: auto 0px;
+}
+main article.fourthArticle section:first-child section.rightImageSection > img {
+  width: 100%;
+}
+main article.fourthArticle section:first-child .blueBackground {
+  width: 70%;
+  height: 120%;
+  left: -10%;
+  position: absolute;
+  transform: translateY(-7.25%);
+  z-index: -1;
+  background-color: rgba(0, 255, 187, 0.233);
 }
 
 footer {
