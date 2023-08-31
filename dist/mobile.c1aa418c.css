@@ -188,7 +188,7 @@ main article.sixthArticle section:first-child {
   height: max-content;
 }
 main article.sixthArticle section:first-child div {
-  width: 30%;
+  width: 40%;
 }
 main article.sixthArticle section:first-child div:first-child img {
   transform: translateY(25%);
@@ -204,6 +204,26 @@ main article.sixthArticle section:first-child div.purpleBackground {
   height: 140%;
   position: absolute;
   background-color: rgba(144, 9, 144, 0.386);
+}
+main article.seventhArticle > section {
+  background-color: rgba(53, 194, 255, 0.384);
+}
+main article.seventhArticle > section section:first-child {
+  width: 100%;
+}
+main article.seventhArticle > section section:first-child img {
+  width: 100%;
+}
+main article.seventhArticle > section section:last-child {
+  width: 100%;
+}
+main article.seventhArticle > section section:last-child p {
+  margin-left: 10%;
+  width: 80%;
+}
+main article.seventhArticle > section section:last-child p:last-child {
+  display: flex;
+  align-items: center;
 }
 
 footer {

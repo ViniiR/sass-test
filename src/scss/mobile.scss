@@ -203,7 +203,7 @@ main {
                 justify-content: space-between;
                 height: max-content;
                 div {
-                    width: 30%;
+                    width: 40%;
                 }
                 div:first-child {
                     img {
@@ -223,6 +223,28 @@ main {
                     height: 140%;
                     position: absolute;
                     background-color: rgba(144, 9, 144, 0.386);
+                }
+            }
+        }
+        &.seventhArticle {
+            & > section {
+                background-color: rgba(53, 194, 255, 0.384);
+                section:first-child {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                section:last-child {
+                    width: 100%;
+                    p {
+                        margin-left: 10%;
+                        width: 80%;
+                    }
+                    p:last-child {
+                        display: flex;
+                        align-items: center;
+                    }
                 }
             }
         }
