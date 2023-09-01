@@ -227,6 +227,36 @@ main article.seventhArticle > section section:last-child p:last-child {
 }
 
 footer {
+  padding: 7.5%;
+}
+footer form {
+  margin: 10% 0 5% 0;
+}
+footer form label p:first-child {
+  font-weight: bold;
+}
+footer form section {
+  display: flex;
+  padding: 20px 0px 10px 0px;
+}
+footer form section input {
+  padding: 5px;
+  border: 1px solid white;
+}
+footer form section input[type=email] {
+  padding-left: 10px;
+  width: 80%;
+}
+footer form section input[type=email]:focus {
+  border: 1px solid black;
+}
+footer form section input[type=submit] {
+  width: 80px;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+}
+footer section > img {
   display: none;
 }
 

@@ -252,5 +252,41 @@ main {
 }
 
 footer {
-    display: none;
+    padding: 7.5%;
+    h1 {
+        
+    }
+    form {
+        margin: 10% 0 5% 0;
+        label {
+            p:first-child {
+                font-weight: bold;
+            }
+        }
+        section {
+            display: flex;
+            padding: 20px 0px 10px 0px;
+            input {
+                padding: 5px;
+                border: 1px solid white;
+            }
+            input[type=email] {
+                padding-left: 10px;
+                width: 80%;
+                &:focus {
+                    border: 1px solid black;
+                }
+            }
+            input[type=submit] {
+                width: 80px;
+                border: 1px solid blue;
+                background-color: blue;
+                color: white;
+            }
+        }
+    }
+    //TODO:
+    section > img {
+        display: none;
+    }
 }
