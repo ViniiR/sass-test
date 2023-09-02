@@ -40,7 +40,7 @@ header {
                     &:last-child {
                         flex-direction: column;
                         span {
-                            width: 30px;
+                            width: 33px;
                             height: 5px;
                         }
                     }
@@ -326,6 +326,9 @@ footer {
             option {
                 font-weight: 500;
             }
+            &:focus {
+                border: 1px solid black;
+            }
         }
     }
     div.lastLinkDiv {
@@ -334,6 +337,33 @@ footer {
         }
     }
     section:last-child {
-        
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        section.logoSection {
+            display: flex;
+            gap: 5px;
+            div {
+                display: flex;
+                gap: 3px;
+                span {
+                    background-color: black;
+                }
+                &:first-child {
+                    
+                    span {
+                        width: 5px;
+                        height: 30px;
+                    }
+                }
+                &:last-child {
+                    flex-direction: column;
+                    span {
+                        width: 35px;
+                        height: 5px;
+                    }
+                }
+            }
+        }
     }
 }

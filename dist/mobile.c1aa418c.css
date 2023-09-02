@@ -41,7 +41,7 @@ header section:first-child a .pageLogo div:last-child {
   flex-direction: column;
 }
 header section:first-child a .pageLogo div:last-child span {
-  width: 30px;
+  width: 33px;
   height: 5px;
 }
 header section:first-child section {
@@ -296,8 +296,38 @@ footer div.language-and-location select {
 footer div.language-and-location select option {
   font-weight: 500;
 }
+footer div.language-and-location select:focus {
+  border: 1px solid black;
+}
 footer div.lastLinkDiv a::after {
   display: none;
+}
+footer section:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer section:last-child section.logoSection {
+  display: flex;
+  gap: 5px;
+}
+footer section:last-child section.logoSection div {
+  display: flex;
+  gap: 3px;
+}
+footer section:last-child section.logoSection div span {
+  background-color: black;
+}
+footer section:last-child section.logoSection div:first-child span {
+  width: 5px;
+  height: 30px;
+}
+footer section:last-child section.logoSection div:last-child {
+  flex-direction: column;
+}
+footer section:last-child section.logoSection div:last-child span {
+  width: 35px;
+  height: 5px;
 }
 
 /*# sourceMappingURL=/mobile.c1aa418c.css.map */
