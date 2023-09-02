@@ -253,14 +253,14 @@ main {
 
 footer {
     padding: 7.5%;
-    h1 {
-        
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     form {
         margin: 10% 0 5% 0;
         label {
             p:first-child {
-                font-weight: bold;
+                font-weight: 500;
             }
         }
         section {
@@ -285,8 +285,55 @@ footer {
             }
         }
     }
-    //TODO:
-    section > img {
-        display: none;
+    div {
+        h2 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        ul {
+            margin-top: 5px;
+            list-style-type: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: .9rem;
+                    &::after {
+                        content: "";
+                        background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 24 20\' style=\'fill: black;\'><path d=\'M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z\'></path></svg>');
+                        width: 12px;
+                        height: 12px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    section.socialMediaSection {
+        display: flex;
+        width: max-content;
+        gap: 5px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    div.language-and-location {
+        select {
+            padding: 5px;
+            margin-top: 10px;
+            border: 1px solid white;
+            option {
+                font-weight: 500;
+            }
+        }
+    }
+    div.lastLinkDiv {
+        a::after {
+            display: none;
+        }
+    }
+    section:last-child {
+        
     }
 }
