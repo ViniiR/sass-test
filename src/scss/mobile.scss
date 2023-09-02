@@ -52,6 +52,14 @@ header {
             label {
                 font-family: 'Cabin', sans-serif;
                 font-size: 1.1rem;
+                //TODO:
+                &::after {
+                    content: "";
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 6 24 14" style="fill: rgba(0, 0, 0, 1);"><path d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"></path></svg>');
+                    width: 20px;
+                    height: 12px;
+                    display: inline-block;
+                }
             }
             input{
                 appearance: none;
@@ -272,13 +280,16 @@ footer {
             }
             input[type=email] {
                 padding-left: 10px;
-                width: 80%;
+                width: 90%;
+                font-size: .9rem;
                 &:focus {
                     border: 1px solid black;
                 }
             }
             input[type=submit] {
                 width: 80px;
+                font-size: .8rem;
+                padding: 5px;
                 border: 1px solid blue;
                 background-color: blue;
                 color: white;
@@ -314,8 +325,8 @@ footer {
         width: max-content;
         gap: 5px;
         img {
-            width: 30px;
-            height: 30px;
+            width: 8vw;
+            height: 8vw;
         }
     }
     div.language-and-location {
@@ -323,6 +334,7 @@ footer {
             padding: 5px;
             margin-top: 10px;
             border: 1px solid white;
+            font-size: .9rem;
             option {
                 font-weight: 500;
             }
